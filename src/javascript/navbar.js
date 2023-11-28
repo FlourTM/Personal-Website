@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 img.src = isOpen ? '../assets/menuopened.svg' : '../assets/menu.svg'
                 img.style.transform = isOpen ? 'rotate(1deg)' : 'rotate(0deg)'
                 navbarMenu.classList.toggle('hidden', !isOpen)
+                document.body.classList.toggle('overflow-hidden', isOpen)
+
             })
         })
 })

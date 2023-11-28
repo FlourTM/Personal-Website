@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+/*****************/
+/* Global Styles */
+/*****************/
+* {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    @apply text-textMain bg-mainBg;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.mainContent {
+    padding-top: 4em;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+span {
+    font-size: inherit;
+    font-weight: 600;
+}
+
+@keyframes wiggle {
+    0%,
+    100% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+.wiggleAnimation:hover {
+    animation: wiggle 0.5s ease-in-out infinite; /* Adjust the duration and other properties as needed */
+}
+
+
+
+/****************/
+/*    Navbar    */
+/****************/
+#menuButton img {
+    transition: all 0.3s ease;
+}
+
+.navItem {
+    font-size: 2.7em;
+    display: flex;
+    align-items: center;
+    gap: .25em;
+    letter-spacing: 1px;
+    padding: .25em;
+}
+
+.number {
+    height: 4.2em;
+}
+
+
+
+/***************/
+/*    Index    */
+/***************/
+.indexBtns {
+    @apply border-2 rounded-md px-4 py-1 font-semibold text-center;
+}
+
+
+/******************/
+/* Scrollbar Info */
+/******************/
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-mainBg
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-textMain
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-textDim
+}
