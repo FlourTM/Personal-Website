@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/input.css">
     <link rel="stylesheet" href="../css/output.css">
     <script type="module" src="../javascript/navbar.js" defer></script>
+    <script type="module" src="../javascript/contact.js"></script>
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
     <title>Contact Me</title>
 </head>
 
@@ -15,13 +17,67 @@
     <nav class="navbar">
         <!-- The navbar content will be loaded dynamically here -->
     </nav>
-    
+
     <div class="mainContent">
         <div class="header">
             <h1 class="headerTitle after:bg-accentTeal">Contact Me</h1>
         </div>
 
-        
+        <div class="flex flex-col items-center justify-center pt-10 mx-auto max-w-[700px]">
+            <div class="flex flex-col items-center w-full">
+                <h3>Send me a message:</h3>
+                <form id="form" class="w-full" method="post">
+                    <div class="flex w-full gap-4 p-3"> <!-- Name -->
+                        <svg class="w-12 text-accentYellow" viewBox="0 0 70 80" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.53534 20.8864L34.641 1.77285L67.7467 20.8864V59.1136L34.641 78.2271L1.53534 59.1136V20.8864Z"
+                                stroke="currentColor" stroke-width="4" />
+                        </svg>
+                        <input id="name" name="name" type='text' placeholder='Name'
+                            class='w-full p-2 border-2 h-fit bg-mainBg border-accentYellow' required></input>
+                    </div>
+
+                    <div class="flex w-full gap-4 p-3"> <!-- Email -->
+                        <svg class="w-12 text-accentTeal" viewBox="0 0 70 80" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.53534 20.8864L34.641 1.77285L67.7467 20.8864V59.1136L34.641 78.2271L1.53534 59.1136V20.8864Z"
+                                stroke="currentColor" stroke-width="4" />
+                        </svg>
+                        <input id="email" name="email" type='email' placeholder='Email'
+                            class='w-full p-2 bg-transparent border-2 h-fit border-accentTeal' required></input>
+                    </div>
+
+                    <div class="flex w-full gap-4 p-3"> <!-- Message -->
+                        <svg class="w-12 place-self-start text-accentPink" viewBox="0 0 70 80"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.53534 20.8864L34.641 1.77285L67.7467 20.8864V59.1136L34.641 78.2271L1.53534 59.1136V20.8864Z"
+                                stroke="currentColor" stroke-width="4" />
+                        </svg>
+                        <textarea id="message" name="message" placeholder='Message'
+                            class='w-full h-32 p-2 bg-transparent border-2 border-accentPink' required></textarea>
+                    </div>
+
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+
+                    <div class="flex justify-center w-full pt-3">
+                        <button type="submit" id="my-form-button"
+                            class="indexBtns border-accentYellow hover:bg-accentYellow hover:text-mainBg">SEND</button>
+                    </div>
+                </form>
+            </div>
+
+            <p id="formMessage" class="pt-3"></p>
+
+            <div class="flex items-center justify-center w-full gap-8 pt-12">
+                <a href="https://github.com/FlourTM" target="_blank" id="github"><img src="../assets/github.svg"
+                        class="h-16"></a>
+                <a href="https://www.linkedin.com/in/flourtm/" target="_blank" id="linkedin"><img
+                        src="../assets/linkedin.svg" class="h-16"></a>
+                <a href="https://www.etsy.com/shop/borderlinebee/" target="_blank" id="etsy"><img
+                        src="../assets/etsy.svg" class="h-16"></a>
+            </div>
+        </div>
     </div>
 </body>
 
