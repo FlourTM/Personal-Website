@@ -82,8 +82,33 @@ span {
 /*    Index    */
 /***************/
 .indexBtns {
-    @apply border-2 rounded-md px-4 py-1 font-semibold text-center;
+    @apply px-4 py-1 font-semibold text-center border-2 rounded-md;
 }
+
+
+
+/*****************/
+/* Miscellaneous */
+/*****************/
+.header {
+    text-align: center;
+    padding-top: 1em;
+}
+.headerTitle {
+    display: inline-block;
+    position: relative;
+}
+
+.headerTitle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120%;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 
 /******************/

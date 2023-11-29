@@ -841,6 +841,32 @@ span {
   font-weight: 600;
 }
 
+/*****************/
+
+/* Miscellaneous */
+
+/*****************/
+
+.header {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.headerTitle {
+  display: inline-block;
+  position: relative;
+}
+
+.headerTitle::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 120%;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /******************/
 
 /* Scrollbar Info */
@@ -865,6 +891,24 @@ span {
 ::-webkit-scrollbar-thumb:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(208 208 208 / var(--tw-bg-opacity));
+}
+
+.after\:bg-accentYellow::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 170 13 / var(--tw-bg-opacity));
+}
+
+.after\:bg-accentTeal::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 197 175 / var(--tw-bg-opacity));
+}
+
+.after\:bg-accentPink::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 14 75 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-accentPink:hover {
