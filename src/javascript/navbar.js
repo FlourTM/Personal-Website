@@ -7,7 +7,18 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(html => {
             navbarContainer.innerHTML = html
 
-            // Now that the content is loaded, get the menuButton
+            // Logo Handling
+            const myLogo = document.getElementById('myLogo')
+
+            myLogo.addEventListener('mouseenter', function () {
+                myLogo.src = '../assets/logoHover.svg'
+            })
+
+            myLogo.addEventListener('mouseleave', function () {
+                myLogo.src = '../assets/floursvg.svg'
+            })
+
+            // Menu Button Handling
             const menuButton = document.getElementById('menuButton')
             const navbarMenu = document.getElementById('navbarMenu')
             let isOpen = false
@@ -31,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 img.style.transform = isOpen ? 'rotate(1deg)' : 'rotate(0deg)'
                 navbarMenu.classList.toggle('hidden', !isOpen)
                 document.body.classList.toggle('overflow-hidden', isOpen)
-
             })
         })
 })

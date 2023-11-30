@@ -50,6 +50,10 @@ span {
     font-weight: 600;
 }
 
+p {
+    font-size: 1em;
+}
+
 
 
 /****************/
@@ -103,6 +107,10 @@ span {
     height: 3px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.langIcon {
+    width: 3.5em;
 }
 
 
