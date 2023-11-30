@@ -45,6 +45,11 @@ h3 {
     padding-bottom: .5em;
 }
 
+h4 {
+    font-style: italic;
+    padding-bottom: .75em;
+}
+
 span {
     font-size: inherit;
     font-weight: 600;
@@ -111,6 +116,11 @@ p {
 
 .langIcon {
     width: 3.5em;
+}
+
+.projectTitle {
+    padding-top: .4em;
+    padding-bottom: 0;
 }
 
 
