@@ -123,6 +123,10 @@ p {
     padding-bottom: 0;
 }
 
+.calendly-inline-widget {
+    z-index: 0 !important;
+}
+
 
 
 /******************/

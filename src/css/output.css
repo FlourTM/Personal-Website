@@ -546,8 +546,16 @@ video {
   top: 0px;
 }
 
+.\!z-10 {
+  z-index: 10 !important;
+}
+
 .z-20 {
   z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-8 {
@@ -574,6 +582,10 @@ video {
 
 .mr-20 {
   margin-right: 5rem;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -993,6 +1005,10 @@ p {
 .projectTitle {
   padding-top: .4em;
   padding-bottom: 0;
+}
+
+.calendly-inline-widget {
+  z-index: 0 !important;
 }
 
 /******************/
