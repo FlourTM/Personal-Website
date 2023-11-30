@@ -1092,14 +1092,6 @@ p {
   fill: #E7AA0D;
 }
 
-.hover\:fill-accentPink:hover {
-  fill: #DB0E4B;
-}
-
-.hover\:stroke-accentPink:hover {
-  stroke: #DB0E4B;
-}
-
 .hover\:text-accentPink:hover {
   --tw-text-opacity: 1;
   color: rgb(219 14 75 / var(--tw-text-opacity));
