@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/input.css">
     <link rel="stylesheet" href="../css/output.css">
     <script type="module" src="../javascript/navbar.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.269/pdf.min.js"></script>
     <title>My Resume</title>
 </head>
 
@@ -22,7 +21,19 @@
             <h1 class="headerTitle after:bg-accentYellow">My Resume</h1>
         </div>
 
-        <iframe id="pdf-js-viewer" src="../assets/Resume.pdf" title="webviewer" class="w-full h-screen p-12 mx-auto max-w-[1400px]"></iframe>
+        <object data='../assets/resume/Resume.pdf' class="w-full h-screen p-12 mx-auto max-w-[1400px]">
+            <div class="pt-8 text-center">
+                <p class="pb-4">Oops! Your browser doesn't support PDFs!</p>
+                <p><a href="../assets/resume/Resume.pdf" target="_blank"
+                        class="mainBtns border-accentYellow hover:bg-accentYellow hover:text-mainBg">Download Resume</a>
+                </p>
+            </div>
+            <div class="flex flex-col items-center gap-4 p-8">
+                <img src="../assets/resume/page1.png">
+                <img src="../assets/resume/page2.png">
+                <img src="../assets/resume/page3.png">
+            </div>
+        </object>
     </div>
 </body>
 
