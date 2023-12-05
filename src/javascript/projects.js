@@ -3,6 +3,10 @@ const projectImages = {
         '../assets/projectImages/knowledgeGraph/image1.png',
         '../assets/projectImages/knowledgeGraph/image2.png',
         '../assets/projectImages/knowledgeGraph/image3.png',
+        '../assets/projectImages/knowledgeGraph/image4.png',
+        '../assets/projectImages/knowledgeGraph/image5.png',
+        '../assets/projectImages/knowledgeGraph/image6.png',
+        '../assets/projectImages/knowledgeGraph/image7.png',
     ],
     2: [
         '../assets/projectImages/ecommerce/image1.png',
