@@ -3,9 +3,9 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css?family=Inter');
 
-/*****************/
-/* Global Styles */
-/*****************/
+/*********************/
+/*   Global Styles   */
+/*********************/
 * {
     margin: 0;
     font-size: 14px;
@@ -26,8 +26,6 @@ body {
 .mainContent {
     padding-top: 4em;
     width: 100%;
-    /* height: 100%; */
-    /* w-screen h-screen flex p-12 */
 }
 
 h1 {
@@ -66,9 +64,9 @@ li {
 
 
 
-/****************/
-/*    Navbar    */
-/****************/
+/********************/
+/*      Navbar      */
+/********************/
 #menuButton img {
     transition: all 0.3s ease;
 }
@@ -88,18 +86,9 @@ li {
 
 
 
-/***************/
-/*    Index    */
-/***************/
-.indexBtns {
-    @apply px-4 py-1 font-semibold text-center border-2 rounded-md;
-}
-
-
-
-/*****************/
-/* Miscellaneous */
-/*****************/
+/********************************************/
+/*   Headers   →   All pages except Index   */
+/********************************************/
 .header {
     text-align: center;
     padding-top: 1em;
@@ -119,20 +108,12 @@ li {
     transform: translateX(-50%);
 }
 
-.langIcon {
-    width: 3.5em;
-}
 
-.projectTitle {
-    padding-top: .4em;
-    padding-bottom: 0;
-}
 
-.calendly-inline-widget {
-    z-index: 0 !important;
-}
-
-.overlay {
+/*******************************************/
+/*   Image Slideshow   →   Projects page   */
+/*******************************************/
+.overlay {      /* Image slideshow overlay to add shadow over page */
     position: fixed;
     top: 0;
     left: 0;
@@ -142,7 +123,7 @@ li {
     z-index: 999;
 }
 
-.slideshow-container {
+.slideshow-container {      /* Image slideshow container */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -151,23 +132,7 @@ li {
     max-width: 1000px;
 }
 
-.slideshow-images {
-    padding: .25em;
-}
-
-.close {
-    font-size: 1.25em;
-}
-
-.arrow {
-    font-size: 2em;
-}
-
-.slideshow-titles {
-    padding: 0;
-}
-
-.slideshow-header {
+.slideshow-header {     /* Includes the title and close button */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -175,17 +140,43 @@ li {
     padding-right: 1.2em;
 }
 
-.fade-in {
-    animation: fadeIn 0.25s ease-in;
+.slideshow-titles {     /* Titles need 0 padding since they are h3 elements */
+    padding: 0;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0.5;
-    }
-    to {
-        opacity: 1;
-    }
+.close {        /* Close button for image slideshow */
+    font-size: 1.25em;
+}
+
+.slideshow-images {     /* Images in slideshow container */
+    padding: .25em;
+}
+
+.arrow {        /* Forwards and back arrows for slideshow */
+    font-size: 2em;
+}
+
+
+
+/*********************/
+/*   Miscellaneous   */
+/*********************/
+.mainBtns {
+    @apply px-4 py-1 font-semibold text-center border-2 rounded-md;
+}
+
+.langIcon {         /* Languages/Tools icons on About page */
+    width: 3.5em;
+}
+
+.projectTitle {     /* Project titles on Projects page */
+    padding-top: .4em;
+    padding-bottom: 0;
+}
+
+.calendly-inline-widget {       /* Calendar widget on Calendar page */
+    z-index: 0 !important;
+    margin: 1.5em !important;
 }
 
 
@@ -203,8 +194,8 @@ li {
     }
 }
 
-.wiggleInfinite:hover {
-    animation: wiggle1 0.5s ease-in-out infinite; /* Adjust the duration and other properties as needed */
+.wiggleInfinite:hover {         /* Used for hexagons on Index page */
+    animation: wiggle1 0.5s ease-in-out infinite;
 }
 
 @keyframes wiggle2 {
@@ -219,15 +210,28 @@ li {
     }
 }
 
-.wiggleStatic {
+.wiggleStatic {         /* Used for socials on Contact and About pages, inside contact.js */
     animation: wiggle2 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {          /* Used in image slideshow on Project page, inside projects.js */
+    animation: fadeIn 0.25s ease-in;
 }
 
 
 
-/******************/
-/* Scrollbar Info */
-/******************/
+/**********************/
+/*   Scrollbar Info   */
+/**********************/
 ::-webkit-scrollbar {
     width: 7px;
     height: 7px;

@@ -871,11 +871,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-/*****************/
+/*********************/
 
-/* Global Styles */
+/*   Global Styles   */
 
-/*****************/
+/*********************/
 
 * {
   margin: 0;
@@ -899,8 +899,6 @@ body {
 .mainContent {
   padding-top: 4em;
   width: 100%;
-  /* height: 100%; */
-  /* w-screen h-screen flex p-12 */
 }
 
 h1 {
@@ -937,11 +935,11 @@ li {
   padding-bottom: .25em;
 }
 
-/****************/
+/********************/
 
-/*    Navbar    */
+/*      Navbar      */
 
-/****************/
+/********************/
 
 #menuButton img {
   transition: all 0.3s ease;
@@ -960,28 +958,11 @@ li {
   height: 4.2em;
 }
 
-/***************/
+/********************************************/
 
-/*    Index    */
+/*   Headers   →   All pages except Index   */
 
-/***************/
-
-.indexBtns {
-  border-radius: 0.375rem;
-  border-width: 2px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  text-align: center;
-  font-weight: 600;
-}
-
-/*****************/
-
-/* Miscellaneous */
-
-/*****************/
+/********************************************/
 
 .header {
   text-align: center;
@@ -1003,20 +984,14 @@ li {
   transform: translateX(-50%);
 }
 
-.langIcon {
-  width: 3.5em;
-}
+/*******************************************/
 
-.projectTitle {
-  padding-top: .4em;
-  padding-bottom: 0;
-}
+/*   Image Slideshow   →   Projects page   */
 
-.calendly-inline-widget {
-  z-index: 0 !important;
-}
+/*******************************************/
 
 .overlay {
+  /* Image slideshow overlay to add shadow over page */
   position: fixed;
   top: 0;
   left: 0;
@@ -1027,6 +1002,7 @@ li {
 }
 
 .slideshow-container {
+  /* Image slideshow container */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1035,23 +1011,8 @@ li {
   max-width: 1000px;
 }
 
-.slideshow-images {
-  padding: .25em;
-}
-
-.close {
-  font-size: 1.25em;
-}
-
-.arrow {
-  font-size: 2em;
-}
-
-.slideshow-titles {
-  padding: 0;
-}
-
 .slideshow-header {
+  /* Includes the title and close button */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1059,18 +1020,58 @@ li {
   padding-right: 1.2em;
 }
 
-.fade-in {
-  animation: fadeIn 0.25s ease-in;
+.slideshow-titles {
+  /* Titles need 0 padding since they are h3 elements */
+  padding: 0;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0.5;
-  }
+.close {
+  /* Close button for image slideshow */
+  font-size: 1.25em;
+}
 
-  to {
-    opacity: 1;
-  }
+.slideshow-images {
+  /* Images in slideshow container */
+  padding: .25em;
+}
+
+.arrow {
+  /* Forwards and back arrows for slideshow */
+  font-size: 2em;
+}
+
+/*********************/
+
+/*   Miscellaneous   */
+
+/*********************/
+
+.mainBtns {
+  border-radius: 0.375rem;
+  border-width: 2px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.langIcon {
+  /* Languages/Tools icons on About page */
+  width: 3.5em;
+}
+
+.projectTitle {
+  /* Project titles on Projects page */
+  padding-top: .4em;
+  padding-bottom: 0;
+}
+
+.calendly-inline-widget {
+  /* Calendar widget on Calendar page */
+  z-index: 0 !important;
+  margin: 1.5em !important;
 }
 
 /******************/
@@ -1091,8 +1092,8 @@ li {
 }
 
 .wiggleInfinite:hover {
+  /* Used for hexagons on Index page */
   animation: wiggle1 0.5s ease-in-out infinite;
-  /* Adjust the duration and other properties as needed */
 }
 
 @keyframes wiggle2 {
@@ -1110,14 +1111,30 @@ li {
 }
 
 .wiggleStatic {
+  /* Used for socials on Contact and About pages, inside contact.js */
   animation: wiggle2 0.25s ease-in-out;
 }
 
-/******************/
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
 
-/* Scrollbar Info */
+  to {
+    opacity: 1;
+  }
+}
 
-/******************/
+.fade-in {
+  /* Used in image slideshow on Project page, inside projects.js */
+  animation: fadeIn 0.25s ease-in;
+}
+
+/**********************/
+
+/*   Scrollbar Info   */
+
+/**********************/
 
 ::-webkit-scrollbar {
   width: 7px;
