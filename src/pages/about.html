@@ -22,11 +22,11 @@
             <h1 class="headerTitle after:bg-accentTeal">About Me</h1>
         </div>
 
-        <div class="flex items-center justify-center w-full gap-10 p-16 mx-auto max-w-[1400px]">
-            <img src="../assets/temp.gif" alt="Photo of Me" class="max-w-[300px]">
+        <div class="lg:flex items-center justify-center w-full gap-10 p-8 sm:p-16 mx-auto max-w-[1400px]">
+            <img src="../assets/me.png" alt="Photo of Me" class="max-w-[300px] mx-auto lg:mx-0 pb-8 lg:pb-0">
 
             <div>
-                <div class="flex flex-col w-full gap-10">
+                <div class="flex flex-col w-full gap-4 lg:gap-10">
                     <p>
                         Hello there, I'm <span class="text-accentPink">Gabriella</span>, a recent graduate with a dual
                         major in Computer Science and
@@ -49,10 +49,10 @@
                         stickers, shirts, and home decor.
                     </p>
                 </div>
-                
-                <div class="flex justify-start w-full gap-8 pt-4">
-                    <a href="https://github.com/FlourTM" target="_blank" id="github"><img src="../assets/socials/github.svg"
-                            class="h-16"></a>
+
+                <div class="flex items-center justify-center w-full gap-8 pt-4 lg:justify-normal">
+                    <a href="https://github.com/FlourTM" target="_blank" id="github"><img
+                            src="../assets/socials/github.svg" class="h-16"></a>
                     <a href="https://www.linkedin.com/in/flourtm/" target="_blank" id="linkedin"><img
                             src="../assets/socials/linkedin.svg" class="h-16"></a>
                     <a href="https://www.etsy.com/shop/borderlinebee/" target="_blank" id="etsy"><img
@@ -63,42 +63,48 @@
 
         <hr class="mx-8 rounded-lg border-1 border-accentTeal">
 
-        <div class="py-8 text-center">
+        <div class="p-8 text-center">
             <h2>Want to see some cool stuff?</h2>
             <h3>Here's some languages and tools I'm familiar with:</h3>
-            <div class="flex justify-center gap-4 pb-8">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
-                    title="Angular" alt="Angular" class="langIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML5"
-                    alt="HTML" class="langIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    title="JavaScript" alt="JavaScript" class="langIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                    title="TypeScript" alt="TypeScript" class="langIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" title="CSS3"
-                    alt="CSS" class="langIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                    title="TailwindCSS" alt="TailwindCSS" class="langIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" title="PHP" alt="PHP"
-                    class="langIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-                    title="MySQL" alt="MySQL" class="langIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" title="Figma"
-                    alt="Figma" class="langIcon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
-                    title="Blender" alt="Blender" class="langIcon">
+            <div class="flex flex-col justify-center pb-8 sm:flex-row">
+                <div class="flex justify-center gap-2 pb-4 sm:gap-4 sm:pb-0">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
+                        title="Angular" alt="Angular" class="langIcon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML5"
+                        alt="HTML" class="langIcon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        title="JavaScript" alt="JavaScript" class="langIcon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        title="TypeScript" alt="TypeScript" class="langIcon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
+                        title="CSS3" alt="CSS" class="langIcon">
+                </div>
+
+                <div class="flex justify-center gap-2 sm:gap-4">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                        title="TailwindCSS" alt="TailwindCSS" class="langIcon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" title="PHP"
+                        alt="PHP" class="langIcon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                        title="MySQL" alt="MySQL" class="langIcon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" title="Figma"
+                        alt="Figma" class="langIcon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
+                        title="Blender" alt="Blender" class="langIcon">
+                </div>
+
             </div>
 
             <h3>And here's my stats:</h3>
-            <div class="flex items-center justify-center gap-1">
-                <img src="https://github-stats-gules-chi.vercel.app/api/wakatime/?username=FlourTM&show_icons=true&title_color=DB0E4B&text_color=EBEBEB&icon_color=0FC5AF&bg_color=0FC5AF10"
-                    title="WakaTime Stats" alt="WakaTime Stats" class="w-full max-w-[500px] max-h-[500px]">
+            <div class="flex flex-col items-center justify-center gap-1 lg:flex-row">
+                <a href="https://wakatime.com/@FlourTM" target="_blank"><img src="https://github-stats-gules-chi.vercel.app/api/wakatime/?username=FlourTM&show_icons=true&title_color=DB0E4B&text_color=EBEBEB&icon_color=0FC5AF&bg_color=0FC5AF10"
+                    title="WakaTime Stats" alt="WakaTime Stats" class="w-full max-w-[500px] max-h-[500px]"></a>
 
-                <div class="max-h-[500px] w-full max-w-[500px] flex flex-col gap-1">
-                    <img src="https://github-stats-gules-chi.vercel.app/api/top-langs/?username=FlourTM&show_icons=true&title_color=DB0E4B&text_color=EBEBEB&icon_color=0FC5AF&bg_color=0FC5AF10"
-                        title="WakaTime Stats" alt="WakaTime Stats" class="place-self-start">
-                    <img src="https://github-stats-gules-chi.vercel.app/api?username=FlourTM&show_icons=true&rank_icon=github&custom_title=FlourTM's+Github+Stats&title_color=DB0E4B&text_color=EBEBEB&icon_color=0FC5AF&bg_color=0FC5AF10"
-                        title="GitHub Stats" alt="GitHub Stats">
+                <div class="w-full max-h-[500px] max-w-[500px] flex flex-col gap-1">
+                    <a href="https://github.com/FlourTM" target="_blank"><img src="https://github-stats-gules-chi.vercel.app/api/top-langs/?username=FlourTM&show_icons=true&title_color=DB0E4B&text_color=EBEBEB&icon_color=0FC5AF&bg_color=0FC5AF10"
+                        title="Most Used Languages" alt="Most Used Languages" class="hidden place-self-start lg:block"></a>
+                        <a href="https://github.com/FlourTM" target="_blank"><img src="https://github-stats-gules-chi.vercel.app/api?username=FlourTM&show_icons=true&rank_icon=github&custom_title=FlourTM's+Github+Stats&title_color=DB0E4B&text_color=EBEBEB&icon_color=0FC5AF&bg_color=0FC5AF10"
+                        title="GitHub Stats" alt="GitHub Stats"></a>
                 </div>
             </div>
         </div>

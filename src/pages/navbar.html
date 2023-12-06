@@ -3,7 +3,6 @@
 <nav class="navbar">
     <script type="module" src="../javascript/navbar.js"></script>
 
-    <!-- Desktop Navbar -->
     <div class="w-screen h-full max-h-screen">
         <div class="fixed top-0 left-0 z-50 w-full bg-mainBg">
             <div class="flex justify-between p-2">
@@ -13,26 +12,15 @@
                         alt="Names I'm known as" class="w-fit" />
                 </a>
 
-                <div class="flex items-center justify-between gap-4">
-                    <!-- <button id="themeButton" class="flex">
-                        <svg id="sunIcon" class="h-8" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="hover:fill-accentYellow" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M20.6395 1.36082C20.6395 0.609261 21.2488 0 22.0003 0C22.7519 0 23.3612 0.60926 23.3612 1.36082V6.12369C23.3612 6.87525 22.7519 7.48452 22.0003 7.48452C21.2488 7.48452 20.6395 6.87526 20.6395 6.12369V1.36082ZM33.3404 21.9999C33.3404 28.2629 28.2633 33.3401 22.0003 33.3401C15.7373 33.3401 10.6601 28.2629 10.6601 21.9999C10.6601 15.7369 15.7373 10.6598 22.0003 10.6598C28.2633 10.6598 33.3404 15.7369 33.3404 21.9999ZM0 22C0 22.7516 0.609261 23.3608 1.36082 23.3608H6.12369C6.87526 23.3608 7.48452 22.7516 7.48452 22C7.48452 21.2484 6.87525 20.6392 6.12369 20.6392H1.36082C0.60926 20.6392 0 21.2484 0 22ZM37.8759 23.3608C37.1244 23.3608 36.5151 22.7516 36.5151 22C36.5151 21.2484 37.1244 20.6392 37.8759 20.6392H42.6388C43.3904 20.6392 43.9996 21.2484 43.9996 22C43.9996 22.7516 43.3904 23.3608 42.6388 23.3608H37.8759ZM22.0003 36.5154C21.2488 36.5154 20.6395 37.1247 20.6395 37.8762V42.6391C20.6395 43.3907 21.2488 43.9999 22.0003 43.9999C22.7519 43.9999 23.3612 43.3907 23.3612 42.6391V37.8762C23.3612 37.1247 22.7519 36.5154 22.0003 36.5154ZM35.7675 6.58045C36.2989 6.04901 37.1605 6.04901 37.6919 6.58045C38.2234 7.11188 38.2234 7.97351 37.6919 8.50494L34.3241 11.8728C33.7927 12.4042 32.931 12.4042 32.3996 11.8728C31.8682 11.3414 31.8682 10.4797 32.3996 9.94831L35.7675 6.58045ZM6.58061 6.30822C6.04918 6.83966 6.04918 7.70128 6.58061 8.23271L9.94847 11.6006C10.4799 12.132 11.3415 12.132 11.873 11.6006C12.4044 11.0691 12.4044 10.2075 11.873 9.67608L8.5051 6.30822C7.97367 5.77679 7.11205 5.77679 6.58061 6.30822ZM32.1276 34.3237C31.5961 33.7923 31.5961 32.9307 32.1276 32.3992C32.659 31.8678 33.5206 31.8678 34.052 32.3992L37.4199 35.7671C37.9513 36.2985 37.9513 37.1601 37.4199 37.6916C36.8885 38.223 36.0268 38.223 35.4954 37.6916L32.1276 34.3237ZM11.6006 32.1271C11.0692 31.5956 10.2075 31.5956 9.67612 32.1271L6.30826 35.4949C5.77682 36.0264 5.77682 36.888 6.30826 37.4194C6.83969 37.9508 7.70131 37.9508 8.23275 37.4194L11.6006 34.0516C12.132 33.5201 12.132 32.6585 11.6006 32.1271Z"
-                                fill="#D9D9D9" />
-                        </svg>
-                        <svg id="moonIcon" class="hidden h-8" viewBox="0 0 34 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="hover:fill-accentTeal"
-                                d="M17.534 24.9394C23.3332 36.3962 33.6189 41.2185 33.7558 41.4889C22.2989 47.288 8.31019 42.7015 2.51108 31.2447C-3.28804 19.7878 1.29846 5.79911 12.7553 0C12.7553 0 11.7349 13.4825 17.534 24.9394Z"
-                                fill="#000812" />
-                        </svg>
-                    </button> -->
                     <button id="menuButton"><img src="../assets/menu/menu.svg" class="h-10"></button>
-                </div>
+
             </div>
         </div>
 
-        <div id="navbarMenu" class="fixed top-0 left-0 z-20 flex items-center justify-center hidden w-full h-full p-12 bg-mainBg">
-            <div class="flex flex-col items-center justify-center w-1/3 max-h-full">
+        <!-- Menu screen -->
+        <div id="navbarMenu" class="fixed top-0 left-0 z-20 flex flex-col items-center justify-center hidden w-full h-full p-12 bg-mainBg lg:flex-row">
+            <!-- Hexagons for desktop -->
+            <div class="flex-col items-center justify-center hidden lg:flex w-[400px]">
                 <svg class="w-1/3 -mb-2 text-accentYellow" viewBox="0 0 327 283" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 141.261L81.5573 0H244.672L326.229 141.261L244.672 282.523H81.5573L0 141.261Z"
                         fill="currentColor" />
@@ -49,7 +37,7 @@
                 </svg>
             </div>
 
-            <ul class="w-1/3">
+            <ul class="text-center">
                 <a href="./index.html" class="navItem hover:text-accentPink"><img src="../assets/hexagons/hex1.svg" class="number">HOME</a>
                 <a href="./about.html" class="navItem hover:text-accentTeal"><img src="../assets/hexagons/hex2.svg" class="number">ABOUT</a>
                 <a href="./resume.html" class="navItem hover:text-accentYellow"><img src="../assets/hexagons/hex3.svg" class="number">RESUME</a>
@@ -57,6 +45,24 @@
                 <a href="./contact.html" class="navItem hover:text-accentTeal"><img src="../assets/hexagons/hex5.svg" class="number">CONTACT</a>
                 <a href="./calendar.html" class="navItem hover:text-accentYellow"><img src="../assets/hexagons/hex6.svg" class="number">CALENDAR</a>
             </ul>
+
+            <!-- Hexagons for mobile -->
+            <div class="flex gap-4 pt-8 lg:hidden max-h-[150px] max-w-[400px]">
+                <svg class="w-1/3 text-accentPink" viewBox="0 0 327 283" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 141.261L81.5573 0H244.672L326.229 141.261L244.672 282.523H81.5573L0 141.261Z"
+                        fill="currentColor" />
+                </svg>
+    
+                <svg class="w-1/3 text-accentTeal" viewBox="0 0 327 283" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 141.261L81.5573 0H244.672L326.229 141.261L244.672 282.523H81.5573L0 141.261Z"
+                        fill="currentColor" />
+                </svg>
+    
+                <svg class="w-1/3 text-accentYellow" viewBox="0 0 327 283" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 141.261L81.5573 0H244.672L326.229 141.261L244.672 282.523H81.5573L0 141.261Z"
+                        fill="currentColor" />
+                </svg>
+            </div>
         </div>
     </div>
 
