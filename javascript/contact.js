@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const linkedin = document.getElementById('linkedin')
     const etsy = document.getElementById('etsy')
 
-    handleHover(github, '/assets/socials/githubHover.svg', '/assets/socials/github.svg')
-    handleHover(linkedin, '/assets/socials/linkedinHover.svg', '/assets/socials/linkedin.svg')
-    handleHover(etsy, '/assets/socials/etsyHover.svg', '/assets/socials/etsy.svg')
+    handleHover(github, './assets/socials/githubHover.svg', './assets/socials/github.svg')
+    handleHover(linkedin, './assets/socials/linkedinHover.svg', './assets/socials/linkedin.svg')
+    handleHover(etsy, './assets/socials/etsyHover.svg', './assets/socials/etsy.svg')
 
     const sendBtn = document.getElementById('my-form-button')
 

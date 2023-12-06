@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const myLogo = document.getElementById('myLogo')
 
             myLogo.addEventListener('mouseenter', function () {
-                myLogo.src = '/assets/logos/logoHover.svg'
+                myLogo.src = './assets/logos/logoHover.svg'
             })
 
             myLogo.addEventListener('mouseleave', function () {
-                myLogo.src = '/assets/logos/floursvg.svg'
+                myLogo.src = './assets/logos/floursvg.svg'
             })
 
             // Menu Button Handling
@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Hover event
             menuButton.addEventListener('mouseenter', function () {
-                this.querySelector('img').src = '/assets/menu/menuhover.svg'
+                this.querySelector('img').src = './assets/menu/menuhover.svg'
                 this.querySelector('img').style.transform = isOpen ? 'rotate(90deg)' : 'rotate(90deg)'
             })
 
             menuButton.addEventListener('mouseleave', function () {
-                this.querySelector('img').src = isOpen ? '/assets/menu/menuopened.svg' : '/assets/menu/menu.svg'
+                this.querySelector('img').src = isOpen ? './assets/menu/menuopened.svg' : './assets/menu/menu.svg'
                 this.querySelector('img').style.transform = isOpen ? 'rotate(0deg)' : 'rotate(0deg)'
             })
 
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             menuButton.addEventListener('click', function () {
                 const img = this.querySelector('img')
                 isOpen = !isOpen
-                img.src = isOpen ? '/assets/menu/menuopened.svg' : '/assets/menu/menu.svg'
+                img.src = isOpen ? './assets/menu/menuopened.svg' : './assets/menu/menu.svg'
                 img.style.transform = isOpen ? 'rotate(1deg)' : 'rotate(0deg)'
                 navbarMenu.classList.toggle('hidden', !isOpen)
                 document.body.classList.toggle('overflow-hidden', isOpen)
